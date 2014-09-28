@@ -1,7 +1,7 @@
  !----------------------------------------------------------------------------
  !             Talmi-Moshinsky Transformation Coefficients                   ! 
  !                            for                                            !
- !                  2D Harmanic Oscillator Basis                             !
+ !                  2D Harmonic Oscillator Basis                             !
  !                                                                           !
  !    Yang, Li <leeyoung@iastate.edu>, Nov. 18, 2013                         !
  !    Contributors: Xingbo Zhao, Paul Wiecki                                 !
