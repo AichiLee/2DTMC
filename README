@@ -1,0 +1,45 @@
+ !----------------------------------------------------------------------------
+ !             Tamli-Moshinsky Transformation Coefficients                   ! 
+ !                            for                                            !
+ !                  2D Harmanic Oscillator Basis                             !
+ !                                                                           !
+ !    Yang, Li <leeyoung@iastate.edu>, Nov. 18, 2013                         !
+ !    Contributors: Xingbo Zhao, Paul Wiecki                                 !
+ !--                                                                         !
+ !  definition of the Talmi-Moshinsky (TM) transformation:                   !
+ !  (see tmc.pdf for more details)                                           !
+ !- Let psi(n,m, p) be the normalized 2D HO functions. Then TM transformation!
+ !  relates the HO function in the single-particle coordinate with the       !
+ !  relative coordinate:                                                     ! 
+ !                                                                           !
+ !  psi(n1,m1,p1;b1)*psi(n2,m2,p2;b2) =                                      !
+ !                      sum_{N,M,n,m} TMC(N,M,n,m;n1,m1,n2,m2;b1,b2)         !
+ !                                          * psi(N,M,P;B)*psi(n,m,p,b)      !
+ !  where B = sqrt(b1^2+b2^2), b = b1*b2/B; P = p1 + p2 [vector],            !
+ !  p = (b2^2*p1 - b1^2*p2)/(b1^2+b2^2) [vector].                            !
+ !                                                                           !
+ !  (By doing the TM transformation reccursively, one  can relate the single-!
+ !  particle coordinate HO function to the Jacobi coordinate HO function.)   !
+ !
+ !- The HO function, expressed in the momentum space, reads,                 !
+ !  b*psi(n,m,p) = sqrt(4*pi*n!/(n+|m|)!) * exp(i*m*phi-rho^2/2) * rho^|m| * !
+ !                LaguerreL(n, |m|, rho^2)                                   !
+ !   where LaguerreL(n, a, x) is the generalized Laguerre polynomial.        !
+ !   rho = |p|/b, phi = arg p, b is the basis energy scale.                  !
+ !   [recall for H = p^2/(2*m) + 1/2*m*w^2*r^2, b = sqrt(m*w), so            !
+ !    in the transformation, B = sqrt((m1+m2)*w), b = sqrt(m1*m2/(m1+m2)*w)] !
+ !                                                                           !
+ !  psi(n,m,p) psisatisfy the orthonormality relations:                      !
+ !                                                                           !
+ !  int d^2 p/(2*pi)^2 psi(n,m,p) psi^*(n',m',p) = delta(n,n') delta(m,m')   !
+ !  sum_{n,m} psi(n,m,p) psi(n,m,p') -> (2*pi)^2*delta^2(p-p')               !
+ !                                                                           !
+ !  where "^*" means the complex conjugate.                                  ! 
+ !                                                                           !
+ !- Properties of the TM coefficients (TMC):                                 !
+ !                                                                           !
+ !  * TMC only depends on delta = arctan(b2/b1);                             !
+ !  * TMC is proportional to delta(2*n1+|m1|+2*n2+|m2|, 2*N+|M|+2*n+|m|);    !
+ !  * TMC is proportional to delta(m1+m2, M+m);                              !
+ !                                                                           !
+ !---------------------------------------------------------------------------!

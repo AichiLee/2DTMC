@@ -1,0 +1,25 @@
+ Nmax =           48 , r =    1.0000000000000000     
+ count: lhs/total =        20825    10416665
+ ncore =            8
+ deviation from unity: SD/max =   1.87813778129963330E-012  7.09839265145006948E-009
+ total time, all/wall=   8647.7564500000008        3577.4609086280689     
+ Nmax =           56 , r =    1.0000000000000000     
+ count: lhs/total =        32509    21878557
+ ncore =            8
+ deviation from unity: SD/max =   2.39412102216904989E-011  1.08777556850903068E-007
+ total time, all/wall=   39875.488061999997        16538.695005170070     
+ Nmax =           12 , r =    1.0000000000000000     
+ count: lhs/total =          455       17927
+ ncore =            8
+ deviation from unity: SD/max =   2.98144969962441880E-016  3.68594044175551971E-014
+ total time, all/wall=  0.11200700000000000       3.03146205842494965E-002
+ Nmax =            4 , r =    1.0000000000000000     
+ count: lhs/total =           35         259
+ ncore =            8
+ deviation from unity: SD/max =   2.16598837156835667E-016  4.21884749357559485E-015
+ total time, all/wall=  2.00009999999999979E-002  3.29599622637033463E-003
+ Nmax =            6 , r =    1.0000000000000000     
+ count: lhs/total =           84        1092
+ ncore =            8
+ deviation from unity: SD/max =   2.25076760858793812E-016  1.07691633388640184E-014
+ total time, all/wall=  1.20000000000000002E-002  1.73194706439971924E-003
