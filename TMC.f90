@@ -1,5 +1,5 @@
  !----------------------------------------------------------------------------
- !             Tamli-Moshinsky Transformation Coefficients                   ! 
+ !             Talmi-Moshinsky Transformation Coefficients                   ! 
  !                            for                                            !
  !                  2D Harmanic Oscillator Basis                             !
  !                                                                           !

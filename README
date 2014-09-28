@@ -1,10 +1,27 @@
  !----------------------------------------------------------------------------
- !             Tamli-Moshinsky Transformation Coefficients                   ! 
+ !             Talmi-Moshinsky Transformation Coefficients                   ! 
  !                            for                                            !
  !                  2D Harmanic Oscillator Basis                             !
  !                                                                           !
  !    Yang, Li <leeyoung@iastate.edu>, Nov. 18, 2013                         !
  !    Contributors: Xingbo Zhao, Paul Wiecki                                 !
+ !--                                                                         !
+ !  description of the repo:                                                 !
+ !  TMC.f90  ********  FORTRAN 90 source file                                !
+ !  tmc.pdf  ********  description of the Talmi-Moshisky Coefficients (TMCs) !
+ !  TalmiMoshinsyTransformation.m  *******  Mathematica package              !
+ !  other files  ******  test etc.                                           !
+ !                                                                           !
+ !--                                                                         !
+ !  How to use:                                                              !
+ !  FORTRAN90 double precision function tmc(nn, mm, n, m, n1, m1, n2, m2, r) !
+ !  Mathematica: TMC[ nn, mm, n, m, n1, m1, n2, m2, 1, Sqrt[r] ]             !
+ !                                                                           !
+ !--                                                                         !
+ !  tests:                                                                   !
+ !  Mathematica code is tested up to Nmax = 20, the Fortran code is tested   !
+ !  for unitarity up to Nmax = 56 (see tmc.pdf )                             !
+ !                                                                           !
  !--                                                                         !
  !  definition of the Talmi-Moshinsky (TM) transformation:                   !
  !  (see tmc.pdf for more details)                                           !
