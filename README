@@ -23,6 +23,13 @@
  !  for unitarity up to Nmax = 56 (see tmc.pdf )                             !
  !                                                                           !
  !--                                                                         !
+ !  Limitations:                                                             !
+ !  The FORTRAN code uses double precision. Numerical instability arises for !
+ !  Nmax > 60 (see the tests), where the numerical precision drops below     !
+ !  1E-6. Quaduple precision should be used there if high numerical precision!
+ !  is needed.                                                               !!
+ !                                                                           !
+ !--                                                                         !
  !  definition of the Talmi-Moshinsky (TM) transformation:                   !
  !  (see tmc.pdf for more details)                                           !
  !- Let psi(n,m, p) be the normalized 2D HO functions. Then TM transformation!
