@@ -3,7 +3,7 @@
  !                            for                                            !
  !                  2D Harmonic Oscillator Basis                             !
  !                                                                           !
- !    Yang, Li <leeyoung@iastate.edu>, Nov. 18, 2013                         !
+ !    Yang Li <leeyoung@iastate.edu>, Nov. 18, 2013                         !
  !    Contributors: Xingbo Zhao, Paul Wiecki                                 !
  !--                                                                         !
  !  definition of the Talmi-Moshinsky (TM) transformation:                   !
@@ -20,7 +20,7 @@
  !                                                                           !
  !  (By doing the TM transformation reccursively, one  can relate the single-!
  !  particle coordinate HO function to the Jacobi coordinate HO function.)   !
- !
+ !                                                                           !
  !- The HO function, expressed in the momentum space, reads,                 !
  !  b*psi(n,m,p) = sqrt(4*pi*n!/(n+|m|)!) * exp(i*m*phi-rho^2/2) * rho^|m| * !
  !                LaguerreL(n, |m|, rho^2)                                   !
